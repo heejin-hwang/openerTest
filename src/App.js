@@ -11,11 +11,19 @@ function App() {
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://local.dev.kakaoi.io:3000/billing/callback.html"
           target="_blank"
-          rel="noopener noreferrer"
+          // rel="noopener noreferrer"
         >
-          Learn React
+          성공
+        </a>
+        <a
+          className="App-link"
+          href="https://local.dev.kakaoi.io:3000/billing/payment/fail"
+          target="_blank"
+          // rel="noopener noreferrer"
+        >
+          실패
         </a>
       </header>
     </div>
