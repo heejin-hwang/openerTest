@@ -16,7 +16,15 @@ function App() {
           target="_blank"
           // rel="noopener noreferrer"
         >
-          성공
+          그냥 location.href
+        </a>
+        <a
+          className="App-link"
+          onclick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback.html'}
+          target="_blank"
+          // rel="noopener noreferrer"
+        >
+          window.location.href 
         </a>
         <a
           className="App-link"
