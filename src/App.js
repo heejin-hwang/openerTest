@@ -20,6 +20,7 @@ function App() {
         </a>
         <a
           className="App-link"
+          href="#"
           onclick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback.html'}
           target="_blank"
           // rel="noopener noreferrer"
