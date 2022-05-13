@@ -11,6 +11,14 @@ function App() {
         </p>
         <a
           className="App-link"
+          href="https://local.dev.kakaoi.io:3000/billing/callback.html"
+          target="_blank"
+          // rel="noopener noreferrer"
+        >
+          그냥 href
+        </a>
+        <a
+          className="App-link"
           href="#"
           onclick="location.href='https://local.dev.kakaoi.io:3000/billing/callback.html'"
           target="_blank"
