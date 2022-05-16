@@ -9,6 +9,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback.html'}>버튼일때는 다른가?</button>
         <a
           className="App-link"
           href="https://local.dev.kakaoi.io:3000/billing/callback.html"
