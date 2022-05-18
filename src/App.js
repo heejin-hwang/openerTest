@@ -11,6 +11,7 @@ function App() {
         </p>
         <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/success.html'}>성공url로 직접</button>
         <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/fail.html'}>실패url로 직접</button>
+        <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback'}>html로 안보내면?</button>
         <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback?success=true.html'}>쿼리파람으로 성공</button>
         <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback?success=false.html'}>쿼리파람으로 성공</button>
         {/* <a
