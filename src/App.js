@@ -9,8 +9,11 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback.html'}>버튼일때는 다른가?</button>
-        <a
+        <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/success.html'}>성공url로 직접</button>
+        <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/fail.html'}>실패url로 직접</button>
+        <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback?success=true.html'}>쿼리파람으로 성공</button>
+        <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback?success=false.html'}>쿼리파람으로 성공</button>
+        {/* <a
           className="App-link"
           href="https://local.dev.kakaoi.io:3000/billing/callback.html"
           target="_blank"
@@ -43,7 +46,7 @@ function App() {
           // rel="noopener noreferrer"
         >
           실패
-        </a>
+        </a> */}
       </header>
     </div>
   );
