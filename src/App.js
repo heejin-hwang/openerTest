@@ -2,8 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  console.log('kepTransactionId', window.opener.document.myForm.kepTransactionId);
-  console.log('userAuthToken', window.opener.document.myForm.userAuthToken);
   return (
     <div className="App">
       <header className="App-header">
