@@ -2,9 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  window.opener.document.myForm.kepTransactionId = document.mychildform.kepTransactionId;
+  window.opener.document.myForm.userAuthToken = document.mychildform.userAuthToken;
+  console.log('kepTransactionId', document.mychildform.kepTransactionId);
+  console.log('userAuthToken', document.mychildform.userAuthToken);
   return (
     <div className="App">
       <header className="App-header">
+            
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -14,40 +19,6 @@ function App() {
         <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback'}>html로 안보내면?</button>
         <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback2.html?code=0000&message=zizizi'}>쿼리파람으로 성공</button>
         <button onClick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback2.html?code=0001&message=tlfvo'}>쿼리파람으로 성공</button>
-        {/* <a
-          className="App-link"
-          href="https://local.dev.kakaoi.io:3000/billing/callback.html"
-          target="_blank"
-          // rel="noopener noreferrer"
-        >
-          그냥 href
-        </a>
-        <a
-          className="App-link"
-          href="#"
-          onclick="location.href='https://local.dev.kakaoi.io:3000/billing/callback.html'"
-          target="_blank"
-          // rel="noopener noreferrer"
-        >
-          그냥 location.href
-        </a>
-        <a
-          className="App-link"
-          href="#"
-          onclick={() => window.location.href = 'https://local.dev.kakaoi.io:3000/billing/callback.html'}
-          target="_blank"
-          // rel="noopener noreferrer"
-        >
-          window.location.href 
-        </a>
-        <a
-          className="App-link"
-          href="https://local.dev.kakaoi.io:3000/billing/payment/fail"
-          target="_blank"
-          // rel="noopener noreferrer"
-        >
-          실패
-        </a> */}
       </header>
     </div>
   );
